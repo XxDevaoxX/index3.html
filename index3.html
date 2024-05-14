@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro simples pessoal</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Cadastro de Pessoal</h2>
+
+<form>
+    <table>
+        <tr>
+            <th colspan="2">Dados Pessoais</th>
+        </tr>
+        <tr>
+            <td>Nome:</td>
+            <td><input type="text" name="nome"></td>
+        </tr>
+		<tr>
+            <td>Nome da mãe:</td>
+            <td><input type="text" name="nome"></td>
+        </tr>
+        <tr>
+            <td>Gênero:</td>
+            <td>
+                <input type="radio" name="genero" value="masculino"> Masculino<br>
+                <input type="radio" name="genero" value="feminino"> Feminino<br>
+                <input type="radio" name="genero" value="outro"> Outro
+            </td>
+        </tr>
+        <tr>
+            <td>Interesses:</td>
+            <td>
+                <input type="check" name="interesse" value=""> <br>
+                <input type="check" name="interesse" value=""> <br>
+                <input type="check" name="interesse" value=""> <br>
+            </td>
+        </tr>
+        <tr>
+            <td>País de Origem:</td>
+            <td>
+                <select name="pais">
+				<option value="">Outro pais</option>
+                    <option value=>Brasil</option>
+                    <option value=>Argentina</option>
+                    <option value=>chile</option>
+					<option value=>Bolivia</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Idiomas:</td>
+            <td>
+                <select name="idiomas" multiple>
+                    <option value=>Português</option>
+                    <option value=>Inglês</option>
+                    <option value=>Espanhol</option>
+                    <option value=>Francês</option>
+					<option value=>Outro idioma</option>
+					
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>OBS:</td>
+            <td><textarea name="OBS" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td>Data de Nascimento:</td>
+            <td><input type="date" name="data_nascimento"></td>
+        </tr>
+        <tr>
+            <td>Estado Civil:</td>
+            <td>
+                <select name="estado_civil">
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Profissão:</td>
+            <td><input type="text" name="profissao"></td>
+        </tr>
+        <tr>
+            <td>Número de Filhos:</td>
+            <td><input type="number" name="num_filhos" min="0" max="10"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Telefone:</td>
+            <td><input type="tel" name="telefone"></td>
+        </tr>
+        <!-- Outros campos -->
+    </table>
+    <br>
+    <input type="submit" value="Cadastrar">
+</form>
+
+</body>
+</html>
